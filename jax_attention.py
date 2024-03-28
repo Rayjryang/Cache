@@ -80,6 +80,11 @@ class Attention(nn.Module):
 
 
 def get_numerial_difference(vanilla_output, flash_output):
+
+    print(f'vanilla_output: {vanilla_output[0,0,:10]}')
+    
+    print(f'flash_output: {flash_output[0,0,:10]}')
+
     diff = abs(vanilla_output) - abs(flash_output)
     sum_diff = jnp.sum(abs(diff))
     print("sum of differences:", sum_diff)
@@ -138,7 +143,7 @@ if __name__ == '__main__':
     flash_elapsed_time = end_time - start_time
     print(f"flash attention forward pass took {flash_elapsed_time} seconds")
 
-    
+
     # comparison
     print(f"seq_len: {seq_len}. speed {vanilla_elapsed_time/flash_elapsed_time:.2f}. times")
     
