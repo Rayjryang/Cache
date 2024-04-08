@@ -238,11 +238,11 @@ if __name__ == '__main__':
 
 '''output:
 
-vanilla attention forward pass took 1.32572603225708 seconds
+vanilla attention forward pass took 1.334207534790039 seconds
 
-flash attention forward pass took 20.44183921813965 seconds
+flash attention forward pass took 17.17262029647827 seconds
 
-batch_size 32, seq_len: 1024, speed 0.06. times
+batch_size 32, seq_len: 1024, speed 0.08. times
 
 vanilla_output: [ 0.01298839 -0.02802607 -0.00647758  0.00275855 -0.0326768  -0.10131085
   0.00496649  0.13378385  0.03150739  0.00630885]
