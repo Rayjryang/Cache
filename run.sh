@@ -1,0 +1,10 @@
+cd ~/CLIPA/clipa_jax/
+#. ./bv_venv_39/bin/activate
+. ./bv_venv/bin/activate
+cd ~/jax_learn/Cache
+#python jax_attention_shard_fixed.py
+#python jax_attention_shard.py 
+#python jax_attention_single.py 
+python test.py
+#python shard.py
+#python jax_learning.py
